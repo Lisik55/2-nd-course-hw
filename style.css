@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  height: 100vh; /*Устанавливает высоту body на 100% высоты окна браузера*/
+  font-size: 16px;
+}
+
+.center {
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
+}
+
+.top {
+  height: 800px;
+  background-image: url(img/background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.header {
+  padding-top: 196px;
+}
+
+.header__title {
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 64px;
+  line-height: 100%;
+  padding-bottom: 24px;
+}
+
+.header__description {
+  padding-bottom: 48px;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0px;
+  vertical-align: middle;
+}
+
+.header__description-go {
+  font-weight: 700;
+}
+
+.header__btn-go {
+  width: 247px;
+  height: 66px;
+  border-radius: 60px;
+  border: 1px solid rgba(32, 32, 39, 1);
+  color: #fff;
+  background: #000;
+  font-weight: 600;
+  font-size: 24px;
+  text-align: center;
+}
+
+.games-info {
+  background-color: #000;
+  height: 1470px;
+}
+
+.games-info__title {
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 64px;
+  color: rgba(255, 255, 255, 1);
+  padding-top: 94px;
+}
+
+.games-info__desc {
+  color: rgba(255, 255, 255, 1);
+  padding-top: 24px;
+  padding-bottom: 72px;
+}
+
+.list-games__title {
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 64px;
+  color: rgba(255, 255, 255, 1);
+}
+
+.games-info__block-wrapper {
+  display: grid;
+  align-items: start;
+  grid-template-columns: repeat(auto-fit, minmax(378px, 1fr));
+  column-gap: 32px;
+}
+
+.games-info__block-wrapper >:nth-child(n+4):nth-child(-n+6) {
+  align-self: end;
+}
+
+.games-info__wrapper {
+  max-width: 378px;
+  height: auto;
+  background-color: #fff;
+  border-radius: 30px;
+  overflow: hidden;
+  padding-bottom: 36px;
+}
+
+.games-info__desc-game {
+  width: 314px;
+  box-sizing: border-box;
+  margin: 32px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.games-info__number-game {
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0px;
+    background-color: rgba(247, 247, 247, 1);
+    border-radius: 52.58px;
+    width: 108px;
+    text-align: center;
+    align-content: center;
+    box-sizing: border-box;
+}
+
+.games-info__title-game {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    vertical-align: middle;
+}
+
+.list-games {
+  background-color: #000;
+}
+
+.list-games__title {
+  padding-top: 46px;
+  padding-bottom: 72px;
+}
+
+.list-games__block-wrapper {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+
+  padding-bottom: 144px;
+}
+
+.list-games__wrapper-list {
+  grid-column: span 12;
+  gap: 48px;
+  background-color: #fff;
+  overflow: hidden;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.list-games__block-game {
+  width: 504px;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0px;
+  vertical-align: middle;
+  margin-left: 48px;
+}
+
+.list-games__title-game {
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 48px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  vertical-align: middle;
+  margin-top: 48px;
+}
+
+.list-games__desc-game {
+  margin-top: 24px;
+}
+
+.list-games__img-game {
+  opacity: 1;
+  border-radius: 30px;
+  height: 80%;
+  aspect-ratio: 6/5;
+}
+
+.list-games__btn-game {
+  width: 247px;
+  height: 66px;
+  margin-top: 36px;
+}
+
+
+
