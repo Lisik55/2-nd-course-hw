@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,23 +9,38 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-    <section class="top center">
+    <header class="top center">
     <div class="header">
         <h1 class="header__title">Добро пожаловать<br>на мой сайт мини-игр</h1>
         <p class="header__description">Тебе предстоит пройти несколько увлекательных игр.<br>
-        Если готов, нажимай <span class="header__description-go">«Поехали!»</span> и <span. class="header__description-go">приступай.</span></p>
-        <button class="header__btn-go">Поехали!</button>
+        Если готов, нажимай <span class="header__description-go">«Поехали!»</span> и <span class="header__description-go">приступай.</span></p>
+        <a href="#games-info" class="header__btn-go">Поехали!</a>
+        <img class="header__stars-big" src="img/top-stars/stars-big.svg" alt="stars-big">
+        <img class="header__img-star-2" src="img/top-stars/img-star-2.svg" alt="img-star-2">
+        <img class="header__img-star-3" src="img/top-stars/img-star-3.svg" alt="img-star-3">
+        <img class="header__img-star-4" src="img/top-stars/img-star-4.svg" alt="img-star-4">
+        <img class="header__img-star-5" src="img/top-stars/img-star-5.svg" alt="img-star-5">
     </div>
-    </section>
-    <section class="games-info center">
+    </header>
+    <div class="scroll">
+        <p class="scroll__bullits">Викторина</p>
+        <img src="img/top-stars/black-star.svg">
+        <p class="scroll__bullits">Угадай число</p>
+        <img src="img/top-stars/black-star.svg">
+        <p class="scroll__bullits">Переверни текст</p>
+        <img src="img/top-stars/black-star.svg">
+        <p class="scroll__bullits">Простая арифметика</p>
+    </div>
+    <section class="games-info center" id="games-info">
         <div>
         <h2 class="games-info__title">Об играх</h2>
         <p class="games-info__desc">В моей коллекции представлено 6 игр на разные темы.<br>
         Игры несложные — в них может поиграть каждый.<br>
         Все игры доступны для пользования.</p>
+        <img class="games-info__img-star-1" src="img/top-stars/img-star-1.svg" alt="img-star-1">
+        <img class="games-info__img-star-11" src="img/top-stars/img-star-11.svg" alt="img-star-11">
+        <img class="games-info__img-star-12" src="img/top-stars/img-star-12.svg" alt="img-star-12">
         </div>
         <div class="games-info__block-wrapper">
             <article class="games-info__wrapper">
@@ -73,7 +87,6 @@
             </article>
         </div>
     </section>
-
     <section class="list-games center">
         <h2 class="list-games__title">Мини-игры</h2>
         <div class="list-games__block-wrapper">
@@ -85,9 +98,56 @@
                     <button class="list-games__btn-game">Играть!</button>
                 </div>
             </article>
+            <article class="list-games__wrapper-list">
+                <a href="#"><img class="list-games__img-game" src="./img/ugadai-chislo-big.png" alt="Угадай число"></a>
+                <div class="list-games__block-game">
+                    <h2 class="list-games__title-game">Простая<br>арифметика</h2>
+                    <p class="list-games__desc-game">Попробуй угадать случайное<br>число от 1 до 100.</p>
+                    <button class="list-games__btn-game">Играть!</button>
+                </div>
+            </article>
+            <article class="list-games__wrapper-list">
+                <a href="#"><img class="list-games__img-game" src="./img/ugadai-chislo-big.png" alt="Угадай число"></a>
+                <div class="list-games__block-game">
+                    <h2 class="list-games__title-game">Простая<br>арифметика</h2>
+                    <p class="list-games__desc-game">Попробуй угадать случайное<br>число от 1 до 100.</p>
+                    <button class="list-games__btn-game">Играть!</button>
+                </div>
+            </article>
+            <article class="list-games__wrapper-list">
+                <a href="#"><img class="list-games__img-game" src="./img/ugadai-chislo-big.png" alt="Угадай число"></a>
+                <div class="list-games__block-game">
+                    <h2 class="list-games__title-game">Простая<br>арифметика</h2>
+                    <p class="list-games__desc-game">Попробуй угадать случайное<br>число от 1 до 100.</p>
+                    <button class="list-games__btn-game">Играть!</button>
+                </div>
+            </article>
+            <article class="list-games__wrapper-list">
+                <a href="#"><img class="list-games__img-game" src="./img/ugadai-chislo-big.png" alt="Угадай число"></a>
+                <div class="list-games__block-game">
+                    <h2 class="list-games__title-game">Простая<br>арифметика</h2>
+                    <p class="list-games__desc-game">Попробуй угадать случайное<br>число от 1 до 100.</p>
+                    <button class="list-games__btn-game">Играть!</button>
+                </div>
+            </article>
+            <article class="list-games__wrapper-list">
+                <a href="#"><img class="list-games__img-game" src="./img/ugadai-chislo-big.png" alt="Угадай число"></a>
+                <div class="list-games__block-game">
+                    <h2 class="list-games__title-game">Простая<br>арифметика</h2>
+                    <p class="list-games__desc-game">Попробуй угадать случайное<br>число от 1 до 100.</p>
+                    <button class="list-games__btn-game">Играть!</button>
+                </div>
+            </article>
         </div>
+            <img class="list-games__img-star-7" src="img/top-stars/img-star-7.svg" alt="img-star-7">
+            <img class="list-games__img-star-6" src="img/top-stars/img-star-6.svg" alt="img-star-6">
+            <img class="list-games__img-star-8" src="img/top-stars/img-star-8.svg" alt="img-star-8">
+            <img class="list-games__img-star-10" src="img/top-stars/img-star-10.svg" alt="img-star-10">
     </section>
-
+    <footer class="footer">
+        <p href="#" class="footer__text">Все права защищены.</p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="hw-2.js"></script>
 </body>
-
 </html>
