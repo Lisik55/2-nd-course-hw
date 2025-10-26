@@ -1,0 +1,130 @@
+@media  (min-width: 425px) and (max-width: 1103px) {
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+    .center {
+        padding-left: calc(50% - 383.5px);
+        padding-right: calc(50% - 383.5px);
+    }
+    
+    .top {
+        position: relative;
+        height: 700px;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: column;
+
+    &__title {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        font-size: 60px;
+        max-width: 500px;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    &__description {
+        max-width: 500px;
+        font-size: 18px;
+        padding-right: 24px;
+        padding-left: 24px;
+    }
+
+    &__btn-go {
+        width: 285px;
+        height: 55px;
+        opacity: 1;
+        border-width: 1px;
+        border-radius: 60px;
+        font: inherit;
+        margin-top: 36px;
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+}
+
+    .scroll {
+        height: 89.99999463558197px;
+        background-color: rgba(188, 236, 48, 1);
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+
+    &__bullits {
+        font-weight: 700;
+        font-style: Bold;
+        font-size: 16px;
+        line-height: 110.00000000000001%;
+        letter-spacing: 4%;
+        vertical-align: middle;
+        text-transform: uppercase;
+        }
+    }
+
+    .games-info {
+        display: none;
+    
+        &__img-star-1, 
+        &__img-star-11, 
+        &__img-star-12 {
+            display: none;
+        }
+    }
+
+    .list-games {
+
+        &__title {
+            font-size: 50px;
+            padding: 24px;
+        }
+
+        &__title-game {
+            font-size: 1.5rem;
+            line-height: 100%;
+            width: 300px;
+        }
+
+        &__desc-game {
+            margin-top: 24px;
+            font-size: 1.2rem;
+            width: 300px;
+            line-height: 1.2;
+        }
+
+        &__img-game {
+            width: 343px;
+        }
+
+        &__wrapper-list {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: nowrap;
+            height: 285px;
+        }
+
+        &__block-game {
+            width: 360px;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 32px;
+            letter-spacing: 0px;
+            vertical-align: middle;
+            padding-top: 24px;
+            padding-left: 24px;
+            padding-right: 24px;
+        }
+
+        &__btn-game {
+            margin-top: 18px;
+        }
+    }
+}

@@ -24,11 +24,14 @@
     font-size: 40px;
     line-height: 100%;
     height: 196px;
+    max-width: 300px;
   }
   .header__description {
+    font-size: 18px;
     text-align: center;
     font: inherit;
     opacity: 8px;
+    max-width: 300px;
   }
   .header__btn-go {
     width: 285px;
@@ -79,13 +82,7 @@
   .games-info {
     display: none; /* Полностью скрываем секцию */
   }
-  .games-info__img-star-1 {
-    display: none;
-  }
-  .games-info__img-star-11 {
-    display: none;
-  }
-  .games-info__img-star-12 {
+  .games-info__img-star-1, .games-info__img-star-11, .games-info__img-star-12 {
     display: none;
   }
   .games-info__block-wrapper {

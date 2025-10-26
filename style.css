@@ -38,7 +38,6 @@ body {
 .header__description {
   position: relative;
   font-weight: 400;
-  font-style: Regular;
   font-size: 24px;
   line-height: 32px;
   letter-spacing: 0px;
@@ -115,12 +114,11 @@ body {
 
 .games-info {
   position: relative;
-  background-color: #000;
+  background-color: #202027;
   height: 1470px;
 }
 .games-info__title {
   font-weight: 700;
-  font-style: Bold;
   font-size: 64px;
   color: rgb(255, 255, 255);
   padding-top: 94px;
@@ -129,6 +127,13 @@ body {
   color: rgb(255, 255, 255);
   padding-top: 24px;
   padding-bottom: 72px;
+  width: 788px;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0px;
+  vertical-align: middle;
 }
 .games-info__img-star-1 {
   position: absolute;
@@ -194,7 +199,7 @@ body {
 }
 
 .list-games {
-  background-color: #000;
+  background-color: #202027;
   position: relative;
 }
 .list-games__title {
@@ -233,11 +238,16 @@ body {
 .list-games__block-game {
   width: 504px;
   font-weight: 400;
-  font-style: Regular;
   font-size: 24px;
   line-height: 32px;
   letter-spacing: 0px;
   vertical-align: middle;
+  padding-top: 48px;
+  padding-left: 48px;
+  padding-right: 48px;
+}
+.list-games__block-game:nth-child(odd) {
+  padding-left: 48px;
 }
 .list-games__title-game {
   font-weight: 700;
@@ -265,6 +275,7 @@ body {
   border-radius: 60px;
   color: #fff;
   font-weight: 600;
+  font: inherit;
   font-size: 24px;
   line-height: 142%;
   text-align: center;
@@ -333,11 +344,14 @@ body {
     font-size: 40px;
     line-height: 100%;
     height: 196px;
+    max-width: 300px;
   }
   .header__description {
+    font-size: 18px;
     text-align: center;
     font: inherit;
     opacity: 8px;
+    max-width: 300px;
   }
   .header__btn-go {
     width: 285px;
@@ -388,13 +402,7 @@ body {
   .games-info {
     display: none; /* Полностью скрываем секцию */
   }
-  .games-info__img-star-1 {
-    display: none;
-  }
-  .games-info__img-star-11 {
-    display: none;
-  }
-  .games-info__img-star-12 {
+  .games-info__img-star-1, .games-info__img-star-11, .games-info__img-star-12 {
     display: none;
   }
   .games-info__block-wrapper {
@@ -455,5 +463,113 @@ body {
   }
   .footer__text {
     font-size: 16px;
+  }
+}
+@media (min-width: 425px) and (max-width: 1103px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .center {
+    padding-left: calc(50% - 383.5px);
+    padding-right: calc(50% - 383.5px);
+  }
+  .top {
+    position: relative;
+    height: 700px;
+  }
+  .header {
+    display: flex;
+    flex-direction: column;
+  }
+  .header__title {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 60px;
+    max-width: 500px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .header__description {
+    max-width: 500px;
+    font-size: 18px;
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+  .header__btn-go {
+    width: 285px;
+    height: 55px;
+    opacity: 1;
+    border-width: 1px;
+    border-radius: 60px;
+    font: inherit;
+    margin-top: 36px;
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+  .scroll {
+    height: 89.9999946356px;
+    background-color: rgb(188, 236, 48);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .scroll__bullits {
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 16px;
+    line-height: 110%;
+    letter-spacing: 4%;
+    vertical-align: middle;
+    text-transform: uppercase;
+  }
+  .games-info {
+    display: none;
+  }
+  .games-info__img-star-1, .games-info__img-star-11, .games-info__img-star-12 {
+    display: none;
+  }
+  .list-games__title {
+    font-size: 50px;
+    padding: 24px;
+  }
+  .list-games__title-game {
+    font-size: 1.5rem;
+    line-height: 100%;
+    width: 300px;
+  }
+  .list-games__desc-game {
+    margin-top: 24px;
+    font-size: 1.2rem;
+    width: 300px;
+    line-height: 1.2;
+  }
+  .list-games__img-game {
+    width: 343px;
+  }
+  .list-games__wrapper-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    height: 285px;
+  }
+  .list-games__block-game {
+    width: 360px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    padding-top: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .list-games__btn-game {
+    margin-top: 18px;
   }
 }/*# sourceMappingURL=style.css.map */
